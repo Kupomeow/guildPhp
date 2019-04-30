@@ -56,6 +56,7 @@ Vous pouvez changer de route dans le front controller "index.php" et ainsi chois
 
 La page d'accueil affichera toujours la liste des personnages contenus dans la base de donnée "gaming"
 Vous pouvez choisir parmis 3 options : Ajouter, Supprimer, Modifier.
+
     - Ajouter : Cliquer sur ajouter, une fenêtre modal apparait et vous invite à entrer les informations de votre personnage.
                 Une fois valider, vous reviendrez à la page d'accueil avec le personnage ajouter.
 
