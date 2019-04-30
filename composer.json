@@ -1,0 +1,12 @@
+{
+    "name": "kupo/mvc-training",
+    "authors": [
+        {
+            "name": "Kupo",
+            "email": "brossard.alban.fr@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.24"
+    }
+}
