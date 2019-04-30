@@ -28,17 +28,26 @@ Gestion de guilde est une application simple en PHP vanille permettant de gérer
 Vous pouvez en effet ajouter un personnage rapidement, le supprimer et également le supprimer.
 
 2- INSTALLATION
+Vous devez créer votre base de donnée, pour cela deux méthodes:
 
-Vous devez absolument créer une base de donnée "gaming" ainsi qu'un table "personnage" dans celle-ci en local.
-"personnage" comportera plusieurs champs:
-    - id -> integer
-    - name -> varchar (255 ou moins, c'est vous qui voyez !)
-    - Job -> varchar (255 ou moins, c'est vous qui voyez !)
-    - level -> integer
+Première méthode :
+
+    Importer directement le fichier gaming.sql dans votre base de donnée.
+    Il se trouve dans le dossier SQL_SOURCES.
+    Celui-ci contient tout ce qu'il faut, ainsi que deux exemples.
+
+Deuxième méthode :
+
+    Vous devez absolument créer une base de donnée "gaming" ainsi qu'un table "personnage" dans celle-ci en local.
+    "personnage" comportera plusieurs champs:
+        - id -> integer (A.I = Auto Incrément)
+        - name -> varchar (255 ou moins, c'est vous qui voyez !)
+        - Job -> varchar (255 ou moins, c'est vous qui voyez !)
+        - level -> integer
 
 Deposer votre fichier guildPhp dans le dossier www si vous utiliser Wamp.
 Lancer votre serveur local et aller sur l'adresse suivante : http://localhost/mvcTraining/
-Vous pouvez changer de route dans le frontController "index.php" et ainsi choisir votre propore URL.
+Vous pouvez changer de route dans le front controller "index.php" et ainsi choisir votre propore URL.
 
 3- UTILISATION
 
