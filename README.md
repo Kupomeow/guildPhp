@@ -31,6 +31,7 @@ Gestion de guilde est une application simple en PHP vanille permettant de gérer
 Vous pouvez en effet ajouter un personnage rapidement, le supprimer et également le modifier.
 
 2- INSTALLATION
+
 Vous devez créer votre base de donnée, pour cela deux méthodes:
 
 Première méthode :
