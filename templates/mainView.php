@@ -71,7 +71,7 @@
                                                 <label for="level" class="text-info">Votre niveau :</label>
                                                 <input type="number" class="form-control" name="level" placeholder="">
                                             </div>
-                                            <button type="submit" class="btn btn-primary">Ajouter !</button>
+                                            <button type="submit" class="btn btn-info">Ajouter !</button>
                                         </form>
                                     </div>
                                 </div>
