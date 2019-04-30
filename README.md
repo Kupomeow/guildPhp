@@ -55,13 +55,17 @@ Vous pouvez choisir parmis 3 options : Ajouter, Supprimer, Modifier.
 
 4- ANNEXES
 
-Injection de dépendance : Cela permet de créer les instances des objets et de lier les objets entre eux sans pour autant
-                          les modifier directement, et que les class ne soient pas dépendantes entre elles en utilisant le design patern Factory.
-                          On peut également encore plus facilité le couplage entre nos classe avec une interface.
+Injection de dépendance : 
 
-                          Service Container : Un container est une sorte de grosse Factory permettant de facilité l'usage de l'injection de dépendance et
-                                              également de l'utiliser à plus grande échelle. 
-                                              Tout les objets générés par un container deviennent ainsi des services car toute les instances sont accessible.
+    Cela permet de créer les instances des objets et de lier les objets entre eux sans pour autant
+    les modifier directement, et que les class ne soient pas dépendantes entre elles en utilisant le design patern Factory.
+    On peut également encore plus facilité le couplage entre nos classe avec une interface.
+
+Service Container : 
+
+    Un container est une sorte de grosse Factory permettant de facilité l'usage de l'injection de dépendance et
+    également de l'utiliser à plus grande échelle. 
+    Tout les objets générés par un container deviennent ainsi des services car toute les instances sont accessible.
 
 Sources : https://putaindecode.io/articles/injection-de-dependances-en-php/
 

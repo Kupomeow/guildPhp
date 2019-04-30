@@ -12,24 +12,26 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-center mb-5 mt-5"> -| PERSONNAGES INSCRIT DANS LA GUILDE |-</h3>
-                <table class="table text-center">
+                <h1 class="text-center text-success">--| Ma Guilde |--</h1>
+                <h3 class="text-center mb-5 mt-5 text-secondary">Liste des personnages de la guilde :</h3>
+                <table class="shadow-lg table text-center">
                     <thead>
                         <tr>
-                            <th scope="col">name</th>
-                            <th scope="col">job</th>
-                            <th scope="col">level</th>
-                            <th scope="col">actions</th>
+                            <th scope="col" class="text-info">Nom personnage</th>
+                            <th scope="col" class="text-info">Job / Métier</th>
+                            <th scope="col" class="text-info">Niveau</th>
+                            <th scope="col" class="text-info">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php foreach ($posts as $post) : ?>
-                            <tr>
-                                <td><?php echo $post['name']; ?></td>
-                                <td><?php echo $post['job']; ?></td>
-                                <td><?php echo $post['level']; ?></td>
-                                <td>
-                                    <a href="/mvcTraining/index.php/delete?id=<?php echo $post['id'] ?>" class="btn btn-danger">Supprimer</a> | <a href="/mvcTraining/index.php/updateForm?id=<?php echo $post['id'] ?>" class="btn btn-info">Modifier</a></td>
+                            <tr class="shadow-sm">
+                                <td class="text-secondary"><?php echo $post['name']; ?></td>
+                                <td class="text-secondary"><?php echo $post['job']; ?></td>
+                                <td class="text-secondary"><?php echo $post['level']; ?></td>
+                                <td class="shadow-sm">
+                                    <a href="/mvcTraining/index.php/delete?id=<?php echo $post['id'] ?>" class="btn btn-danger">Supprimer</a> | 
+                                    <a href="/mvcTraining/index.php/updateForm?id=<?php echo $post['id'] ?>" class="btn btn-primary">Modifier</a></td>
                             </tr>
                         <?php endforeach ?>
                     </tbody>
@@ -39,7 +41,7 @@
         <div class="row">
             <div class="col-md-12 text-center mt-5 mb-5">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-info pt-4 pb-4" data-toggle="modal" data-target="#exampleModal">
                     Ajouter un personnage
                 </button>
 
@@ -48,7 +50,7 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title text-center" id="exampleModalLabel">Ajouter un personnage</h5>
+                                <h5 class="modal-title text-success" id="exampleModalLabel">Ajouter un personnage</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -58,15 +60,15 @@
                                     <div class="col-md-12">
                                         <form method="post" action="/../mvcTraining/index.php/create">
                                             <div class="form-group">
-                                                <label for="name">Votre pseudo :</label>
+                                                <label for="name" class="text-info">Votre nom :</label>
                                                 <input type="text" class="form-control" name="name" aria-describedby="nameHelp" placeholder="">
                                             </div>
                                             <div class="form-group">
-                                                <label for="job">votre job :</label>
+                                                <label for="job" class="text-info">Votre job / métier :</label>
                                                 <input type="text" class="form-control" name="job" placeholder="">
                                             </div>
                                             <div class="form-group">
-                                                <label for="level">votre level :</label>
+                                                <label for="level" class="text-info">Votre niveau :</label>
                                                 <input type="number" class="form-control" name="level" placeholder="">
                                             </div>
                                             <button type="submit" class="btn btn-primary">Ajouter !</button>
@@ -76,7 +78,7 @@
 
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                                <button type="button" class="btn btn-ligth border" data-dismiss="modal">Annuler</button>
                             </div>
                         </div>
                     </div>
