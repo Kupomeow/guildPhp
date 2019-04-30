@@ -11,6 +11,9 @@
              |___/            |_|          
 
 
+
+MY GUILD - By Kupo
+
 --------------
 SOMMAIRE:
 
